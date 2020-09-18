@@ -1,0 +1,209 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.ng-hide{
+  display: none;
+}
+.content-background{
+  background:#ccc;
+}
+.link-path-div{
+  float: left;
+  width:150px
+}
+.search-company{
+  padding-left: 0px;
+  padding-top: 25px;
+}
+.search-input-text{
+  height: 30px;
+  padding: 10px;
+  font-size: x-large;
+}
+.search-input-button{
+  height: 30px;
+  width: 65px;
+  vertical-align: bottom;
+  border-radius: 2px;
+}
+ul.sidebar{
+  position: unset; 
+}
+.select-years{
+  width: 25% !important;
+  padding-left: 10px;
+  margin-left: 20px;
+}
+
+.row.header{
+  height: auto !important;
+}
+
+.search-company .pull-right{width: calc(100% - 90px);}
+.search-company  .col-md-3{
+margin-bottom: 10px;
+}
+.search-company .pull-right input{height: 25px; font-size: 16px}
+.table-cstm{width:100%; overflow: auto;}
+.table-cstm th{white-space: nowrap;}
+
+
+svg {
+  display: inline-block;
+  vertical-align: middle;
+	transform-origin: 50% 50%;
+	animation: scale .6s;
+  margin: 10px;
+}
+text {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bolder;
+  font-size: 12px;
+}
+
+
+@keyframes scale {
+	from { transform: scale(.5); }
+	to { transform: scale(1); }
+}
+.cleadboth{ clear: both;}
+.text-right{ text-align: right}
+.chart1{ width: 300px; margin: auto}
+.donutchart-arcs-path, .donutchart-legend-item-rect, .donutchart-legend-item-label {
+  cursor: pointer;
+}
+
+.donutchart-innertext-label {
+  font-size: 18px;
+}
+
+.donutchart-innertext-value {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.donutchart-arcs-path, .donutchart-legend-item-rect {
+  fill-opacity: 0;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-iteration: 1;
+
+  animation-name: DrawLine, FillIn;
+
+  animation-delay: .5s, 2s;
+  animation-duration: 3s, 1s; 
+  stroke-dashArray: 1500;
+  stroke-dashoffset: 1500;
+}
+
+@keyframes DrawLine {
+  to {
+      stroke-dashOffset: 0;
+  }
+}
+
+@keyframes FillIn {
+  from {
+      fill-opacity: 0;
+  }
+  to {
+      fill-opacity: 1;
+  }
+}
+
+.selected.donutchart-legend-item-label, .toggled.donutchart-legend-item-label {
+  fill: #f44336;
+  text-decoration: underline;
+}
+ul.sidebar .sidebar-list a:hover{
+  color: #fff !important;
+  border-left: 3px solid #e99d1a !important;
+  text-indent: 22px !important;
+  background: #2d3e63 !important;
+}
+ul.sidebar .sidebar-list a.active{
+  color: #fff !important;
+    border-left: 3px solid #e99d1a !important;
+    text-indent: 22px !important;
+    background: #2d3e63 !important;
+}
+ul.sidebar .sidebar-list a{
+  
+    font-size: 14px !important;
+    color: #22304e;
+     
+    font-weight: 600 !important;
+}
+.chart-three{
+  text-align: left;
+  padding-left: 2px;
+  display: inline-block;
+
+}
+.chart-three span{
+  display: inline-block;
+    background: #36c;
+    margin-bottom: 3px;
+    padding: 3px 10px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-right: 2px;
+}
+.active-guide{
+  margin: 10px 0px;
+  font-weight: 600;
+  background: #ddd;
+  display: inline-block;
+  padding-left: 7px;
+  border-radius: 15px 0px 0px 15px;
+}
+.active-guide span{
+  display: inline-block;
+    background: #313131;
+    margin-bottom: 0px;
+    padding: 5px 6px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.activeAnchorClass{
+    color: #fff !important;
+    border-left: 3px solid #e99d1a !important;
+    text-indent: 22px !important;
+    background: #2d3e63 !important;
+}
